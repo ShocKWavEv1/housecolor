@@ -10,7 +10,7 @@
         "hooks/*": ["src/hooks/*"],
         "utils/*": ["src/utils/*"],
         "styles/*": ["src/styles/*"],
-        "public/*": ["../public/*"],
+        "public/*": ["../public/*"]
       }
     }
   }
