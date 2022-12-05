@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lenticular Morié
+* source:	https://sketchfab.com/3d-models/lenticular-morie-d5327b1e3f1c40f780089eadda1c13a8
+* author:	Tycho Magnetic Anomaly (https://sketchfab.com/Tycho_Magnetic_Anomaly)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lenticular Morié" (https://sketchfab.com/3d-models/lenticular-morie-d5327b1e3f1c40f780089eadda1c13a8) by Tycho Magnetic Anomaly (https://sketchfab.com/Tycho_Magnetic_Anomaly) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,124 @@
+{
+    "color": {
+        "primary.900" : {
+            "value": "#14076F"
+        },
+        "primary.800" : {
+            "value": "#1D0C87"
+        },
+        "primary.700" : {
+            "value": "#2B13A7"
+        },
+        "primary.600" : {
+            "value": "#3C1BC8"
+        },
+        "primary.500" : {
+            "value": "#4F26E9"
+        },
+        "primary.400" : {
+            "value": "#7D5AF1"
+        },
+        "primary.300" : {
+            "value": "#9B7BF8"
+        },
+        "primary.200" : {
+            "value": "#BFA8FC"
+        },
+        "primary.100" : {
+            "value": "#E0D3FD"
+        },
+        "accent.900" : {
+            "value": "#7A0A54"
+        },
+        "accent.800" : {
+            "value": "#93115B"
+        },
+        "accent.700" : {
+            "value": "#B71B64"
+        },
+        "accent.600" : {
+            "value": "#DB286A"
+        },
+        "accent.500" : {
+            "value": "#FF376E"
+        },
+        "accent.400" : {
+            "value": "#FF6983"
+        },
+        "accent.300" : {
+            "value": "#FF8690"
+        },
+        "accent.200" : {
+            "value": "#FFB0AF"
+        },
+        "accent.100" : {
+            "value": "#FFDBD7"
+        },
+        "success.900" : {
+            "value": "#076A57"
+        },
+        "success.800" : {
+            "value": "#0C805F"
+        },
+        "success.700" : {
+            "value": "#139F69"
+        },
+        "success.600" : {
+            "value": "#14A36C"
+        },
+        "success.500" : {
+            "value": "#1CBE70"
+        },
+        "success.400" : {
+            "value": "#59EA87"
+        },
+        "success.300" : {
+            "value": "#7BF496"
+        },
+        "success.200" : {
+            "value": "#A8FBB2"
+        },
+        "success.100" : {
+            "value": "#D3FDD4"
+        },
+        "info.900" : {
+            "value": "#071877"
+        },
+        "info.800" : {
+            "value": "#0C2390"
+        },
+        "info.700" : {
+            "value": "#1333B3"
+        },
+        "info.600" : {
+            "value": "#1C46D6"
+        },
+        "info.500" : {
+            "value": "#3451BE"
+        },
+        "info.400" : {
+            "value": "#5C88FB"
+        },
+        "info.300" : {
+            "value": "#7DA4FD"
+        },
+        "info.200" : {
+            "value": "#A8C4FE"
+        },
+        "info.100" : {
+            "value": "#D3E3FE"
+        },
+        "black": {
+            "value": "#151A30"
+        },
+        "secondaryBlack": {
+            "value": "#080C0C"
+        },
+        "white": {
+            "value": "#fffffe"
+        },
+        "secondaryWhite": {
+            "value": "#FBFBFF"
+        }
+    }
+}
