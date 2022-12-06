@@ -118,7 +118,13 @@
             "value": "#fffffe"
         },
         "secondaryWhite": {
-            "value": "#FBFBFF"
+            "value": "#FBFFFE"
+        },
+        "egg": {
+            "value": "#FBFFDF"
+        },
+        "yellow": {
+            "value": "#F7DF27"
         }
     }
 }

@@ -18,3 +18,22 @@ a {
   box-sizing: border-box;
 }
 
+#gradient-canvas {
+  width:100vw;
+  height:100vh;
+  --gradient-color-1: #d50018; 
+  --gradient-color-2: #25001b; 
+  --gradient-color-3: #410041;  
+  --gradient-color-4: #0e003f;
+  --gradient-speed: 0.000006;
+}
+
+canvas{
+  display: block
+}
+
+#container{
+  width: 100vw;
+  height: 100vh
+}
+
