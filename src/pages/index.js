@@ -9,7 +9,7 @@ export default function Home() {
         <iframe src='https://gradient-gl.vercel.app' width="100%" height="100%" />
       </Box>
       <Box bg="transparent" w="100%" h="100vh" position="absolute" zIndex={1} display="flex" alignItems="center" justifyContent="center">
-        <Heading variant={["H6MEDIUM", "H3MEDIUM", "H2MEDIUM", "H2MEDIUM"]} textAlign="center">
+        <Heading variant={["H6MEDIUM", "H5MEDIUM", "H2MEDIUM", "H2MEDIUM"]} textAlign="center">
           Welcome to housecolor
         </Heading>
       </Box>
