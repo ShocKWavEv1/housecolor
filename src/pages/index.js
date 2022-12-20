@@ -9,7 +9,7 @@ export default function Home() {
         <iframe src='https://gradient-gl.vercel.app' width="100%" height="100%" />
       </Box>
       <Box bg="transparent" w="100%" h="100vh" position="absolute" zIndex={1} display="flex" alignItems="center" justifyContent="center">
-        <Heading variant={["H6MEDIUM", "H3MEDIUM", "H2MEDIUM", "H2MEDIUM"]}>
+        <Heading variant={["H6MEDIUM", "H3MEDIUM", "H2MEDIUM", "H2MEDIUM"]} textAlign="center">
           Welcome to housecolor
         </Heading>
       </Box>
@@ -23,7 +23,7 @@ export default function Home() {
         <Button my="20px" colorScheme="accent" size={["sm", "sm", "md", "md"]}>
           welcome to housecolor.studio
         </Button>
-        <Button colorScheme="primary" disabled size={["sm", "sm", "md", "lg"]} >
+        <Button colorScheme="primary" size={["sm", "sm", "md", "lg"]} >
           welcome to housecolor.studio
         </Button>
         <Button mt="20px" variant="outline" disabled colorScheme="primary" size={["sm", "sm", "md", "sm"]} >
