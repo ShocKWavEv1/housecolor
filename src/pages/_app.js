@@ -11,10 +11,11 @@ function MyApp({ Component, pageProps }) {
     console.log("animation end!");
     const root = document.getElementById("__next");
     const loader = document.getElementById("loader");
+    root?.removeChild(loader);
   };
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 1700);
+    setTimeout(() => setIsLoading(false), 2000);
   }, []);
 
   return (
