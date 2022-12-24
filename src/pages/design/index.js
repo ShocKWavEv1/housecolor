@@ -1,4 +1,6 @@
 import { Box, Button, Heading, SimpleGrid, Stack, Text, typography, useColorMode } from '@chakra-ui/react'
+import Hero from 'components/Hero/Hero'
+import Sketch from 'components/Sketch/Sketch'
 
 export default function Design() {
   const { colorMode, toggleColorMode } = useColorMode()
@@ -118,7 +120,9 @@ export default function Design() {
   ]
 
   return (
-    <Box p="2rem" w="100%" bg={colorMode === 'dark' ? 'black' : 'secondaryWhite'} h="auto" minH="100vh" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+    <Box w="100%" bg={colorMode === 'dark' ? 'black' : 'secondaryWhite'} h="auto" minH="100vh" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+      <Sketch gradientGL="14ec6a,4820f2,22228b,0e003f,14ec6a" />
+      <Hero />
       <Button onClick={toggleColorMode} colorScheme="success" size={["xs", "xs", "xs", "xs"]}>
         welcome to housecolor.studio
       </Button>

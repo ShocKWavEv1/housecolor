@@ -1,33 +1,24 @@
-import { Box, Button, Heading, useColorMode } from '@chakra-ui/react'
+import { Box, Button, Heading } from '@chakra-ui/react'
+import Hero from 'components/Hero/Hero'
+import Sketch from 'components/Sketch/Sketch'
+import { useRouter } from 'next/router'
 
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode()
+  const router = useRouter()
 
   return (
-    <Box w="100%" bg={colorMode === 'dark' ? 'black' : 'secondaryWhite'} h="auto" minH="100vh" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
-      <Box w="100%" h="100vh" position="relative" zIndex={0}>
-        <iframe src='https://gradient-gl.vercel.app' width="100%" height="100%" />
-      </Box>
-      <Box bg="transparent" w="100%" h="100vh" position="absolute" zIndex={1} display="flex" alignItems="center" justifyContent="center">
-        <Heading variant={["H6MEDIUM", "H5MEDIUM", "H2MEDIUM", "H2MEDIUM"]} textAlign="center">
-          Welcome to housecolor
+    <Box w="100%" h="auto"  display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+      <Sketch gradientGL={"4820f2,22228b,DB286A,DB286A,0e003f"} />
+      <Hero />
+      <Box padding={["70px 4% 70px 4%", "70px 4% 70px 4%", "70px 4% 70px 4%", "70px 6% 70px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+        <Heading variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H5BOLD"]}>
+          Con increíbles
         </Heading>
-      </Box>
-      <Box p="2rem" w="100%" bg={colorMode === 'dark' ? 'black' : 'secondaryWhite'} h="auto" minH="100vh" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
-        <Button onClick={toggleColorMode} colorScheme="success" size={["xs", "xs", "xs", "xs"]}>
-          welcome to housecolor.studio
-        </Button>
-        <Button mt="20px" colorScheme="info" size={["sm", "sm", "sm", "sm"]}>
-          welcome to housecolor.studio
-        </Button>
-        <Button my="20px" colorScheme="accent" size={["sm", "sm", "md", "md"]}>
-          welcome to housecolor.studio
-        </Button>
-        <Button colorScheme="primary" size={["sm", "sm", "md", "lg"]} >
-          welcome to housecolor.studio
-        </Button>
-        <Button mt="20px" variant="outline" disabled colorScheme="primary" size={["sm", "sm", "md", "sm"]} >
-          welcome to housecolor.studio
+        <Heading variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H5BOLD"]}>
+          Productos digitales
+        </Heading>
+        <Button mt="20px" onClick={() => router.push("/design")} >
+          Hi Route
         </Button>
       </Box>
     </Box>
