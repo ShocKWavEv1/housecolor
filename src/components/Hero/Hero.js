@@ -6,7 +6,7 @@ const Hero = () => {
     return(
         <Box padding={["0 6% 0 6%", "10px 6% 0 6%", "0 6% 0 6%", "0 6% 0 6%"]} w="100%" h="100vh" position="absolute" zIndex={1} display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column" >
             <Box w="100%" h="100%" display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column">
-                <Heading mt="100px" variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H4BOLD"]}>
+                <Heading mt="100px" variant={["H5MEDIUM", "H5MEDIUM", "H4MEDIUM", "H4BOLD"]}>
                     We build digital products that drive business models and keep people engaged
                 </Heading>
             </Box>
