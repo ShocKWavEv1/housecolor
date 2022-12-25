@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react"
 import React from "react"
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 const Sketch = ({ gradientGL }) => {
     return(
@@ -12,6 +12,6 @@ const Sketch = ({ gradientGL }) => {
 
 export default Sketch
 
-Sketch.PropTypes = {
-    gradientGL: PropTypes.string.isRequired,
+Sketch.propTypes = {
+    gradientGL: propTypes.string.isRequired,
 };

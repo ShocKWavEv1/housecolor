@@ -9,7 +9,7 @@ const Layout = ({children}) => {
 
     return(
         <Box w="100%" h="auto" bg={colorMode === 'dark' ? 'black' : 'secondaryWhite'} position="relative" zIndex={0}>
-            <Box position="absolute" w="100%" zIndex={2} padding={["5% 4% 0 4%", "5% 4% 0 4%", "3% 4% 0 4%", "30px 3% 0 3%"]}>
+            <Box position="absolute" w="100%" zIndex={2} padding={["40px 4% 0 4%", "40px 6% 0 6%", "30px 4% 0 4%", "30px 3% 0 3%"]}>
                 <Navigation />
             </Box>
             <Box w="100%" h="auto">

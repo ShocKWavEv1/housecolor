@@ -10,7 +10,7 @@ export default function Home() {
     <Box w="100%" h="auto"  display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
       <Sketch gradientGL={"4820f2,22228b,DB286A,DB286A,0e003f"} />
       <Hero />
-      <Box padding={["70px 4% 70px 4%", "70px 4% 70px 4%", "70px 4% 70px 4%", "70px 6% 70px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+      <Box padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
         <Heading variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H5BOLD"]}>
           Con increíbles
         </Heading>
