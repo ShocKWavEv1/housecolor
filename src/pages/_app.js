@@ -1,4 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import '../../styles/globals.css'
 import { Loader } from 'components/Loader/Loader';
 import Layout from 'container/Layout';
 import LoadingBar from "react-top-loading-bar";

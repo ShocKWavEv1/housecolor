@@ -11,7 +11,7 @@ const Hero = () => {
                 </Heading>
             </Box>
             <Box w="100%" pb="20px" display="flex" alignItems="center" justifyContent="center" >
-                <Box cursor="pointer" >
+                <Box className="bounce2" cursor="pointer" >
                     <TfiAngleDoubleDown fontSize="40px" color="rgba(255, 255, 255, .3)" />
                 </Box>
             </Box>

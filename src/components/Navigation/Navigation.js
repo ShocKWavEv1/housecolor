@@ -68,7 +68,7 @@ const Navigation = () => {
                             {
                                 navLink.map((item, i) => {
                                     return(
-                                        <Box key={i} cursor="pointer" onClick={() => router.push(item.path) }>
+                                        <Box className="navLink" key={i} cursor="pointer" onClick={() => router.push(item.path)}>
                                             <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
                                                 {item.title}
                                             </Text>
