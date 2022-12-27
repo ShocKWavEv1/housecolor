@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps, router }) {
   const LoadingBarRef = useRef(null);
 
   const handleTransitionEnd = () => {
-    console.log("animation end!");
     const root = document.getElementById("__next");
     const loader = document.getElementById("loader");
     root?.removeChild(loader);

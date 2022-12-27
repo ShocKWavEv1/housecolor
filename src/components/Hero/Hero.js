@@ -1,13 +1,16 @@
-import { Box, Button, Heading, Text } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 import React from "react"
 import { TfiAngleDoubleDown } from "react-icons/tfi"
 
 const Hero = () => {
     return(
         <Box padding={["0 6% 0 6%", "10px 6% 0 6%", "0 6% 0 6%", "0 6% 0 6%"]} w="100%" h="100vh" position="absolute" zIndex={1} display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column" >
-            <Box w="100%" h="100%" display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column">
-                <Heading mt="100px" variant={["H5MEDIUM", "H5MEDIUM", "H4MEDIUM", "H4BOLD"]}>
-                    We build digital products that drive business models and keep people engaged
+            <Box w="100%" h="100%" mt="20px" display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column">
+                <Heading mt="100px" variant={["H5BOLD", "H5BOLD", "H4BOLD", "H4BOLD"]}>
+                    We are a full post production studio for films, television, commercial and advertising.
+                </Heading>
+                <Heading variant={["H5BOLD", "H5BOLD", "H4BOLD", "H4BOLD"]}>
+                    Located in México, CDMX.
                 </Heading>
             </Box>
             <Box w="100%" pb="20px" display="flex" alignItems="center" justifyContent="center" >

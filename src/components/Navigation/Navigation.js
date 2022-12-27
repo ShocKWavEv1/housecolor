@@ -14,15 +14,15 @@ const Navigation = () => {
         },
         {
             title: "Nosotros",
-            path: "/nosotros"
+            path: "/design"
+        },
+        {
+            title: "Servicios",
+            path: "/servicios"
         },
         {
             title: "Portafolio",
             path: "/portafolio"
-        },
-        {
-            title: "Consultoría",
-            path: "/consultoria"
         },
         {
             title: "Contacto",

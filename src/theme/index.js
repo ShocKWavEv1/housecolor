@@ -33,6 +33,4 @@ const theme = extendTheme({
   }
 })
 
-console.log(theme.colors["accent.100"])
-
 export default theme
