@@ -53,7 +53,7 @@ const Navigation = () => {
 
     return(
         <Box w="100%" display="flex" flexDirection="row" >
-            <Box w={["50%", "50%", "50%", "30%"]} display="flex" alignItems="flex-end" justifyContent="flex-start">
+            <Box w={["70%", "70%", "50%", "30%"]} display="flex" alignItems="flex-end" justifyContent="flex-start">
                 <Box onClick={() => router.push("/")} cursor="pointer" display="flex" alignItems="flex-end" justifyContent="flex-start" flexDirection="row" >
                     <Box w="40px" h="18px" bg="white" mb="9px" />
                     <Text pl="4px" variant="LGBOLD" >
@@ -61,7 +61,7 @@ const Navigation = () => {
                     </Text>
                 </Box>
             </Box>
-            <Box w={["50%", "50%", "50%", "70%"]} display="flex" alignItems="flex-end" justifyContent="flex-end">
+            <Box w={["30%", "30%", "50%", "70%"]} display="flex" alignItems="flex-end" justifyContent="flex-end">
                 <Show above="lg" >
                     <Box w="100%" display="flex" alignItems="center" justifyContent="flex-end" >
                         <Stack spacing={10} direction="row" >
