@@ -100,7 +100,7 @@ const ServicesGrid = () => {
                 exit="exit"
                 viewport={{ once: true }}
             >
-                <SimpleGrid pt="50px" w="100%" columns={[1, 1, 2, 3, 4]} spacing="30px" >
+                <SimpleGrid pt="50px" w="100%" columns={[1, 1, 2, 3]} spacing="30px" >
                     {
                         services.map((item, i) => {
                             return(
