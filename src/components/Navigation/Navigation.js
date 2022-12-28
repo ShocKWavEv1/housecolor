@@ -32,7 +32,7 @@ const Navigation = () => {
 
     const renderNavbar = () => {
         return(
-            <Box w="100%" padding={["40px 4% 0 4%", "40px 6% 0 6%", "30px 4% 0 4%", "30px 3% 0 3%"]}>
+            <Box w="100%" padding={["30px 6% 0 6%", "30px 6% 0 6%", "30px 4% 0 4%", "0 6% 0 6%"]}>
                 <Box w="100%" display="flex" flexDirection="row" >
                     <Box w="50%" display="flex" alignItems="flex-end" justifyContent="flex-start">
                         <Box w="40px" h="18px" bg="white" mb="9px" />
@@ -42,8 +42,12 @@ const Navigation = () => {
                     </Box>
                     <Box onClick={() => setOpen(false)} w="50%" display="flex" alignItems="flex-end" justifyContent="flex-end" >
                         <Box cursor="pointer" w="50px" h="100%" display="flex" alignItems="flex-end" justifyContent="flex-end" flexDirection="column" >
-                            <Box w="80%" h="2px" bg="white" transform="translate(0, 50%) rotate(45deg);" />
-                            <Box m="10px 0px" w='80%' h="2px" bg="white" transform="translate(0%, -500%) rotate(-45deg);" />
+                            <Box w="100%" display="flex" alignItems="center" justifyContent="center">
+                                <Text variant="XSREGULAR" >
+                                    close
+                                </Text>
+                            </Box>
+                            <Box mt="3px" w='100%' h="2px" bg="white" />
                         </Box>
                     </Box>
                 </Box>

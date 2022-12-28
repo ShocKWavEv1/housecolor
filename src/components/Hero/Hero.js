@@ -6,7 +6,7 @@ const Hero = () => {
     return(
         <Box padding={["0 6% 0 6%", "0px 6% 0 6%", "0 6% 0 6%", "0 6% 0 6%"]} w="100%" h="100vh" position="absolute" zIndex={1} display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column" >
             <Box w="100%" h="100%" mt="20px" display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column">
-                <Heading mt={["70px", "70px", "100px", "100px"]} variant={["H6BOLD", "H6BOLD", "H5BOLD", "H4BOLD"]}>
+                <Heading mt={["60px", "60px", "100px", "100px"]} variant={["H6BOLD", "H6BOLD", "H5BOLD", "H4BOLD"]}>
                     We are a full post production studio for films, television, commercial and advertising.
                 </Heading>
                 <Heading variant={["H6BOLD", "H6BOLD", "H5BOLD", "H4BOLD"]}>
