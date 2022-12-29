@@ -121,7 +121,7 @@ export default function Design() {
   ]
 
   return (
-    <SmoothScrollProvider options={{ smooth: true, multiplier: 1 }}>
+    <SmoothScrollProvider options={{ smooth: true, multiplier: 1, smartphone: { smooth: true }, tablet: { smooth: true } }}>
       <Box w="100%" data-scroll-container h="auto" minH="100vh" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
         <Sketch gradientGL="14ec6a,4820f2,22228b,0e003f,14ec6a" />
         <Hero />

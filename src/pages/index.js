@@ -20,7 +20,7 @@ export default function Home() {
               {[...Array(10).keys()].map((idx) => (
                 <Box w="520px" h="320px" p="20px" key={idx} data-scroll data-scroll-speed="4" data-scroll-delay={idx / 100}>
                   <h2>data-scroll-delay</h2>
-                  <code>{`<div data-scroll data-scroll-speed="1" data-scroll-delay="${idx / 100}"></div>`}</code>
+                  <code>{`data-scroll-delay="${idx / 100}"`}</code>
                 </Box>
               ))}
         </Wrap>
