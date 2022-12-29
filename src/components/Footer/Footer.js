@@ -20,7 +20,7 @@ const Footer = () => {
     ]
 
     return(
-        <Box w="100%" padding={["20px 4% 20px 4%", "20px 4% 20px 4%", "20px 4% 20px 4%", "30px 18% 30px 18%"]} display="flex" alignItems="center" justifyContent="center" flexDirection="column" >
+        <Box as="section" w="100%" padding={["20px 4% 20px 4%", "20px 4% 20px 4%", "20px 4% 20px 4%", "30px 18% 30px 18%"]} display="flex" alignItems="center" justifyContent="center" flexDirection="column" >
             <SimpleGrid w="100%" columns={[1, 1, 3, 3]} spacing="20px" >
                 {
                     footer.map((item, i) => {

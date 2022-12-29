@@ -9,6 +9,8 @@ import Meta from 'utils/Meta';
 import { motion } from 'framer-motion';
 import theme from '../theme'
 
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+
 const variants = {
   hidden: { opacity: 0, x: -10, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -17,6 +19,7 @@ const variants = {
 
 function MyApp({ Component, pageProps, router }) {
   const [isLoading, setIsLoading] = useState(true);
+
   const LoadingBarRef = useRef(null);
 
   const handleTransitionEnd = () => {
@@ -79,7 +82,7 @@ function MyApp({ Component, pageProps, router }) {
           transition={{ type: 'linear' }} // Set the transition to linear
           className=""
         >
-          <Component {...pageProps}  />
+          <Component {...pageProps} />
         </motion.main>
       </Layout>
     </ChakraProvider>

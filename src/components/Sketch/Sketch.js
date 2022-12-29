@@ -4,7 +4,7 @@ import propTypes from "prop-types";
 
 const Sketch = ({ gradientGL, serviceGrid }) => {
     return(
-        <Box w="100%" h={serviceGrid === true ? "50vh" : "100vh"} position="relative" zIndex={0}>
+        <Box as="section" w="100%" h={serviceGrid === true ? "50vh" : "100vh"} position="relative" zIndex={0}>
             <iframe src={`https://gradient-gl.vercel.app/?gl=${gradientGL}`} width="100%" height="100%" loading="lazy" />
         </Box>
     )
