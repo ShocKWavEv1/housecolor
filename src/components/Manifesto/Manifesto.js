@@ -3,8 +3,6 @@ import SmoothScroll from "components/SmoothScroll/SmoothScroll"
 import { motion } from "framer-motion"
 import React from "react"
 
-import styles from '../../../styles/Home.module.css';
-
 const Manifesto = () => {
 
     const manifesto = [
@@ -31,87 +29,64 @@ const Manifesto = () => {
     ]
 
     return(
-        <main className={styles.main}>
-        <div data-scroll-section>
-          <h1 className={styles.title} data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-
-          <p className={styles.description} data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5">
-            Get started by editing <code className={styles.code}>pages/index.tsx</code>
-          </p>
-
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h2>Learn &rarr;</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
-            <a href="https://github.com/vercel/next.js/tree/master/examples" className={styles.card}>
-              <h2>Examples &rarr;</h2>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
+        <Box as="section" data-scroll-section padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+            <motion.div
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    ease: "easeInOut",
+                    duration: 1
+                 }}
             >
-              <h2>Deploy &rarr;</h2>
-              <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-            </a>
-          </div>
-        </div>
-
-        <div data-scroll-section>
-          <p className={styles.description} data-scroll data-scroll-speed="1">
-            Simple Scroll Speed
-          </p>
-
-          <div className={styles.grid}>
-            {[...Array(10).keys()].map((idx) => (
-              <div className={styles.card} key={idx} data-scroll data-scroll-speed={idx}>
-                <h2>data-scroll-speed</h2>
-                <code>{`<div data-scroll data-scroll-speed="${idx}"></div>`}</code>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div data-scroll-section>
-          <p className={styles.description} data-scroll data-scroll-speed="1">
-            Scroll Delay
-          </p>
-
-          <div className={styles.grid}>
-            {[...Array(10).keys()].map((idx) => (
-              <div className={styles.card} key={idx} data-scroll data-scroll-speed="1" data-scroll-delay={idx / 100}>
-                <h2>data-scroll-delay</h2>
-                <code>{`<div data-scroll data-scroll-speed="1" data-scroll-delay="${idx / 100}"></div>`}</code>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div data-scroll-section>
-          <p className={styles.description} data-scroll data-scroll-speed="1">
-            Scroll Speed + Delay
-          </p>
-
-          <div className={styles.grid}>
-            {[...Array(10).keys()].map((idx) => (
-              <div className={styles.card} key={idx} data-scroll data-scroll-speed={idx} data-scroll-delay={idx / 100}>
-                <h2>data-scroll-delay</h2>
-                <code>{`<div data-scroll data-scroll-speed="${idx}" data-scroll-delay="${idx / 100}"></div>`}</code>
-              </div>
-            ))}
-          </div>
-        </div>
-      </main>
+                <Heading variant={["H6BOLD", "H5BOLD", "H5BOLD", "H5BOLD"]}>
+                    Meet the housecolor manifesto
+                </Heading>
+            </motion.div>
+            <Box data-scroll-direction="horizontal" data-scroll-speed="6" >
+                {
+                    manifesto.map((item, i) => {
+                        return(
+                            <Box key={i} mt={i === 0 ? "50px" : "100px"} p="0px 60px" w="100%" h="auto" bg="red" >
+                                <Grid w="100%" h="100%" templateColumns='repeat(12, 2fr)' gap={4} >
+                                    <GridItem colSpan={[12, 12, 4, 6]} h='100%'>
+                                        <Box w="100%" h="100%" display="flex" alignItems="center" justifyContent="center">
+                                            <Box w="260px" h="260px" bg="white" />
+                                        </Box>
+                                    </GridItem>
+                                    <GridItem colSpan={[12, 12, 8, 6]} h='100%'>
+                                        <Box w="100%" h="100%" p="40px" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+                                            <motion.div
+                                                initial={{ opacity: 0 }}
+                                                whileInView={{ opacity: 1 }}
+                                                viewport={{ once: true }}
+                                                transition={{ ease: "easeInOut", duration: 0.5, delay: .8 }}
+                                            >
+                                                <Heading variant="H6BOLD" >
+                                                    {item.title}
+                                                </Heading>
+                                            </motion.div>
+                                            <Box pt="20px">
+                                                <motion.div
+                                                    initial={{ opacity: 0 }}
+                                                    whileInView={{ opacity: 1 }}
+                                                    viewport={{ once: true }}
+                                                    transition={{ ease: "easeInOut", duration: 0.5, delay: 1.2 }}
+                                                >
+                                                    <Text variant="SMMEDIUM" >
+                                                        {item.desc}
+                                                    </Text>
+                                                </motion.div>
+                                            </Box>
+                                        </Box>
+                                    </GridItem>
+                                </Grid>
+                            </Box>
+                        )
+                    })
+                }
+            </Box>
+        </Box>
     )
 }
 
