@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     const { colorMode, toggleColorMode } = useColorMode()
 
     return(
-        <main data-scroll-container>
+        <main data-scroll-container style={{ width: "100%" }} >
             <Box w="100%" h="auto" bg={colorMode === 'dark' ? 'black' : 'secondaryWhite'} position="relative" zIndex={0}>
                 <Box position="absolute" w="100%" zIndex={2} padding={["30px 6% 0 6%", "30px 6% 0 6%", "30px 4% 0 4%", "30px 3% 0 3%"]}>
                     <Navigation />
