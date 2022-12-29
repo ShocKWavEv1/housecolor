@@ -55,3 +55,37 @@ canvas{display: block}
   transform-origin: left;
   transform: scaleX(1);
 }
+
+.scroll-container {
+  position: relative;
+  will-change: transform;
+  width: 600px;
+  height: 50vh;
+}
+.scroll-container .ghost {
+  width: 600px;
+}
+.thumbnails-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 160px;
+  background-color: #141414;
+  border: 40px solid yellowgreen;
+}
+.thumbnails-container .thumbnails {
+  position: relative;
+  display: flex;
+  border: 20px solid yellow;
+}
+.thumbnails-container .thumbnails > *:not(:last-child) {
+  margin-right: 45px;
+}
+.thumbnails-container .thumbnails .thumbnail {
+  height: 40vh;
+  width: 600px;
+  background-color: royalblue;
+  border: 15px solid magenta;
+}

@@ -6,7 +6,7 @@ const ContactBanner = () => {
     const bg = useColorModeValue("primary.500", "primary.500")
 
     return(
-        <Box w="100%" bg={bg} padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%"]}>
+        <Box as="section" w="100%" bg={bg} padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%"]}>
             <Heading variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H5BOLD"]}>
                 Asociémonos,
             </Heading>

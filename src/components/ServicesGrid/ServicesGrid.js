@@ -79,7 +79,7 @@ const ServicesGrid = () => {
     const router = useRouter()
 
     return(
-        <Box padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "100px 6% 100px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+        <Box as="section" padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "100px 6% 100px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
             <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ const ServicesGrid = () => {
                     duration: 1
                  }}
             >
-                <Heading variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H5BOLD"]}>
+                <Heading variant={["H6BOLD", "H5BOLD", "H5BOLD", "H5BOLD"]}>
                     Our post production services
                 </Heading>
             </motion.div>
@@ -98,7 +98,7 @@ const ServicesGrid = () => {
                 initial="hidden"
                 whileInView="show"
                 exit="exit"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: "some" }}
             >
                 <SimpleGrid pt="50px" w="100%" columns={[1, 1, 2, 3]} spacing="30px" >
                     {
