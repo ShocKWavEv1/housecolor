@@ -109,7 +109,7 @@ const Navigation = () => {
                             {
                                 navLink.map((item, i) => {
                                     return(
-                                        <Heading key={i} cursor="pointer" textAlign="center" variant={["H6MEDIUM", "H6MEDIUM", "H6MEDIUM", "H6MEDIUM"]} _hover={{ letterSpacing: '2px' }} >
+                                        <Heading onClick={() => {setOpen(false);router.push(item.path)}} key={i} cursor="pointer" textAlign="center" variant={["H6MEDIUM", "H6MEDIUM", "H6MEDIUM", "H6MEDIUM"]} _hover={{ letterSpacing: '2px' }} >
                                             {item.title}
                                         </Heading>
                                     )
