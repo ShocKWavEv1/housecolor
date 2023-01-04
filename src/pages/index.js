@@ -1,13 +1,8 @@
-import { Box, Button, Heading, Wrap } from '@chakra-ui/react'
+import { Box, Wrap } from '@chakra-ui/react'
 import Hero from 'components/Hero/Hero'
 import ServicesGrid from 'components/ServicesGrid/ServicesGrid'
 import Sketch from 'components/Sketch/Sketch'
 import { SmoothScrollProvider } from 'context/SmoothScroll.js'
-import dynamic from 'next/dynamic'
-
-const Manifesto = dynamic(() => import('../components/Manifesto/Manifesto.js'), {
-  ssr: false,
-})
 
 export default function Home() {
   return (
