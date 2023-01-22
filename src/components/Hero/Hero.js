@@ -14,7 +14,6 @@ const Hero = () => {
                     transition={{
                         ease: "easeInOut",
                         duration: 1,
-                        delay: 2
                     }}
                 >
                     <Heading data-scroll data-scroll-position="top" data-scroll-speed="4" mt={["60px", "60px", "100px", "100px"]} variant={["H6BOLD", "H6BOLD", "H5BOLD", "H4BOLD"]}>
@@ -28,7 +27,6 @@ const Hero = () => {
                     transition={{
                         ease: "easeInOut",
                         duration: 1,
-                        delay: 2.4
                     }}
                 >
                     <Heading data-scroll data-scroll-position="top" data-scroll-speed="3" variant={["H6BOLD", "H6BOLD", "H5BOLD", "H4BOLD"]}>

@@ -34,6 +34,14 @@ export const SmoothScrollProvider = ({ children, options }) => {
   }, [scroll]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
+    scroll &&
+      scroll.scrollTo("top", {
+        duration: 0,
+        disableLerp: true,
+      });
+  });
+
+  useEffect(() => {
     window.dispatchEvent(new Event('resize'))
   }, [router.pathname])
 

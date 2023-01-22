@@ -1,6 +1,7 @@
-import { Box, Heading, Show, Slide, Stack, Text } from "@chakra-ui/react"
+import { Box, Heading, Menu, MenuButton, MenuItem, MenuList, Portal, Show, Slide, Stack, Text } from "@chakra-ui/react"
 import { useRouter } from "next/router"
 import { useState } from "react"
+import { FiChevronDown } from "react-icons/fi"
 
 const Navigation = () => {
     const [isOpen, setOpen] = useState(false)
@@ -18,6 +19,7 @@ const Navigation = () => {
         },
         {
             title: "Servicios",
+            icon: <FiChevronDown />,
             path: "/servicios"
         },
         {
@@ -28,6 +30,33 @@ const Navigation = () => {
             title: "Contacto",
             path: "/contacto"
         },
+    ]
+
+    const servicesLink = [
+        {
+            title: "Dailies",
+            path: "/servicios/dailies"
+        },
+        {
+            title: "Color Grading",
+            path: "/servicios/grading"
+        },
+        {
+            title: "VFX",
+            path: "/servicios/vfx"
+        },
+        {
+            title: "Creative Editorial",
+            path: "/servicios/editorial"
+        },
+        {
+            title: "Suite Rentals",
+            path: "/servicios/suites"
+        },
+        {
+            title: "Mastering Deliverables",
+            path: "/servicios/deliverables"
+        }
     ]
 
     const renderNavbar = () => {
@@ -55,6 +84,40 @@ const Navigation = () => {
         )
     }
 
+    const renderDropdown = (item) => {
+        return(
+            <Menu>
+                <MenuButton>
+                    <Box display="flex" >
+                        <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                            {item.title}
+                        </Text>
+                        <Box pl="5px" display="flex" alignItems="center" justifyContent="center" >
+                            <Text variant="MDMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                                {item.icon}
+                            </Text>
+                        </Box>
+                    </Box>
+                </MenuButton>
+                <Portal>
+                    <MenuList p="10px" border="none" bg="#080C0C" >
+                        {
+                            servicesLink.map((item, i) => {
+                                return(
+                                    <MenuItem onClick={() => router.push(item.path)} bg="#080C0C" p="10px" key={i} >
+                                        <Text variant="XSREGULAR" className="navLink" >
+                                            {item.title}
+                                        </Text>
+                                    </MenuItem>
+                                )
+                            })
+                        }
+                    </MenuList>
+                </Portal>
+            </Menu>
+        )
+    }
+
     return(
         <Box w="100%" display="flex" flexDirection="row" >
             <Box w={["70%", "70%", "50%", "30%"]} display="flex" alignItems="flex-end" justifyContent="flex-start">
@@ -72,10 +135,14 @@ const Navigation = () => {
                             {
                                 navLink.map((item, i) => {
                                     return(
-                                        <Box className="navLink" key={i} cursor="pointer" onClick={() => router.push(item.path)}>
-                                            <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
-                                                {item.title}
-                                            </Text>
+                                        <Box w="auto" display="flex" flexDirection="row" className="navLink" key={i} cursor="pointer" onClick={() => item.path === "/servicios" ? null : router.push(item.path)}>
+                                            {
+                                                item.path === "/servicios" ? 
+                                                    renderDropdown(item) :
+                                                    <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                                                        {item.title}
+                                                    </Text>
+                                            }
                                         </Box>
                                     )
                                 })

@@ -29,7 +29,7 @@ const Manifesto = () => {
     ]
 
     return(
-        <Box as="section" data-scroll-container padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+        <Box as="section" data-scroll-container data-bgcolor="#bcb8ad" padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
             <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -47,20 +47,20 @@ const Manifesto = () => {
                 {
                     manifesto.map((item, i) => {
                         return(
-                            <Box key={i} mt={i === 0 ? "50px" : "100px"} p="0px 60px" w="100%" h="auto" bg="red" >
+                            <Box key={i} mt={i === 0 ? "100px" : "100px"} p="0px 20px" w="100%" h="auto">
                                 <Grid w="100%" h="100%" templateColumns='repeat(12, 2fr)' gap={4} >
                                     <GridItem colSpan={[12, 12, 4, 6]} h='100%'>
                                         <Box w="100%" h="100%" display="flex" alignItems="center" justifyContent="center">
-                                            <Box w="260px" h="260px" bg="white" />
+                                            <Box w="320px" h="320px" bg="white" />
                                         </Box>
                                     </GridItem>
                                     <GridItem colSpan={[12, 12, 8, 6]} h='100%'>
-                                        <Box w="100%" h="100%" p="40px" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+                                        <Box w="100%" h="100%" p="40px" display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column">
                                             <motion.div
                                                 initial={{ opacity: 0 }}
                                                 whileInView={{ opacity: 1 }}
                                                 viewport={{ once: true }}
-                                                transition={{ ease: "easeInOut", duration: 0.5, delay: .8 }}
+                                                transition={{ ease: "easeInOut", duration: 0.5 }}
                                             >
                                                 <Heading variant="H6BOLD" >
                                                     {item.title}
@@ -71,7 +71,7 @@ const Manifesto = () => {
                                                     initial={{ opacity: 0 }}
                                                     whileInView={{ opacity: 1 }}
                                                     viewport={{ once: true }}
-                                                    transition={{ ease: "easeInOut", duration: 0.5, delay: 1.2 }}
+                                                    transition={{ ease: "easeInOut", duration: 0.5 }}
                                                 >
                                                     <Text variant="SMMEDIUM" >
                                                         {item.desc}

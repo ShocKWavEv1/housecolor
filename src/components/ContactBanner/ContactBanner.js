@@ -7,11 +7,11 @@ const ContactBanner = () => {
 
     return(
         <Box as="section" w="100%" bg={bg} padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%"]}>
-            <Heading variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H5BOLD"]}>
-                Asociémonos,
+            <Heading variant={["H6BOLD", "H5BOLD", "H5BOLD", "H5BOLD"]}>
+                Let’s Make Something Together
             </Heading>
-            <Heading variant={["H4MEDIUM", "H5MEDIUM", "H4MEDIUM", "H5BOLD"]}>
-                Elevemos tu negocio
+            <Heading variant={["H6BOLD", "H5BOLD", "H5BOLD", "H5BOLD"]}>
+                Start by saying hi
             </Heading>
             <Text my="10px" variant="MDMEDIUM" >
                 ¿Somos los indicados para acompañarte en tu próximo proyecto?
