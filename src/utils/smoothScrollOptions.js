@@ -2,10 +2,11 @@ export const smoothScrollOptions = {
     smooth: true, 
     multiplier: 1, 
     smartphone: { 
-        smooth: true, 
+        smooth: false, 
         multiplier: 3 
     }, 
     tablet: { 
-        smooth: true, multiplier: 3 
+        smooth: false, 
+        multiplier: 3 
     } 
 }
