@@ -47,33 +47,52 @@ const Manifesto = () => {
                 {
                     manifesto.map((item, i) => {
                         return(
-                            <Box key={i} mt={i === 0 ? "100px" : "100px"} p="0px 20px" w="100%" h="auto">
+                            <Box key={i} mt="100px" p="0px 80px" w="100%" h="auto">
                                 <Grid w="100%" h="100%" templateColumns='repeat(12, 2fr)' gap={4} >
-                                    <GridItem colSpan={[12, 12, 4, 6]} h='100%'>
+                                    <GridItem w="100%" colSpan={[12, 12, 4, 6]} h='100%'>
                                         <Box w="100%" h="100%" display="flex" alignItems="center" justifyContent="center">
-                                            <Box w="320px" h="320px" bg="white" />
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 80 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                viewport={{ once: true }}
+                                                transition={{
+                                                    ease: "easeInOut",
+                                                    duration: 0.5,
+                                                }}
+                                                style={{ width: "100%" }}
+                                            >
+                                                <Box w="100%" h="380px" bg="white">
+                                                    h
+                                                </Box>
+                                            </motion.div>
                                         </Box>
                                     </GridItem>
                                     <GridItem colSpan={[12, 12, 8, 6]} h='100%'>
                                         <Box w="100%" h="100%" p="40px" display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column">
                                             <motion.div
-                                                initial={{ opacity: 0 }}
-                                                whileInView={{ opacity: 1 }}
+                                                initial={{ opacity: 0, y: 80 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
                                                 viewport={{ once: true }}
-                                                transition={{ ease: "easeInOut", duration: 0.5 }}
+                                                transition={{
+                                                    ease: "easeInOut",
+                                                    duration: 1,
+                                                }}
                                             >
-                                                <Heading variant="H6BOLD" >
+                                                <Heading variant="H6BOLD" data-scroll data-scroll-speed="1" >
                                                     {item.title}
                                                 </Heading>
                                             </motion.div>
                                             <Box pt="20px">
                                                 <motion.div
-                                                    initial={{ opacity: 0 }}
-                                                    whileInView={{ opacity: 1 }}
+                                                    initial={{ opacity: 0, y: 80 }}
+                                                    whileInView={{ opacity: 1, y: 0 }}
                                                     viewport={{ once: true }}
-                                                    transition={{ ease: "easeInOut", duration: 0.5 }}
+                                                    transition={{
+                                                        ease: "easeInOut",
+                                                        duration: 1.2,
+                                                    }}
                                                 >
-                                                    <Text variant="SMMEDIUM" >
+                                                    <Text variant="SMMEDIUM" data-scroll data-scroll-speed=".6">
                                                         {item.desc}
                                                     </Text>
                                                 </motion.div>

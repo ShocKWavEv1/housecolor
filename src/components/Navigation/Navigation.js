@@ -71,12 +71,12 @@ const Navigation = () => {
                     </Box>
                     <Box onClick={() => setOpen(false)} w="50%" display="flex" alignItems="flex-end" justifyContent="flex-end" >
                         <Box cursor="pointer" w="50px" h="100%" display="flex" alignItems="flex-end" justifyContent="flex-end" flexDirection="column" >
-                            <Box w="100%" display="flex" alignItems="center" justifyContent="center">
+                            <Box w="90%" display="flex" alignItems="center" justifyContent="center">
                                 <Text variant="XSREGULAR" >
                                     close
                                 </Text>
                             </Box>
-                            <Box mt="3px" w='100%' h="2px" bg="white" />
+                            <Box mt="3px" w='90%' h="1px" bg="white" />
                         </Box>
                     </Box>
                 </Box>
@@ -89,7 +89,7 @@ const Navigation = () => {
             <Menu>
                 <MenuButton>
                     <Box display="flex" >
-                        <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                        <Text variant="MDMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
                             {item.title}
                         </Text>
                         <Box pl="5px" display="flex" alignItems="center" justifyContent="center" >
@@ -122,8 +122,8 @@ const Navigation = () => {
         <Box w="100%" display="flex" flexDirection="row" >
             <Box w={["70%", "70%", "50%", "30%"]} display="flex" alignItems="flex-end" justifyContent="flex-start">
                 <Box onClick={() => router.push("/")} cursor="pointer" display="flex" alignItems="flex-end" justifyContent="flex-start" flexDirection="row" >
-                    <Box w="40px" h="18px" bg="white" mb="9px" />
-                    <Text pl="4px" variant="LGBOLD" >
+                    <Box w="40px" h="20px" bg="white" mb="8px" />
+                    <Text pl="10px" variant="LGBOLD" >
                         housecolor
                     </Text>
                 </Box>
@@ -139,7 +139,7 @@ const Navigation = () => {
                                             {
                                                 item.path === "/servicios" ? 
                                                     renderDropdown(item) :
-                                                    <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                                                    <Text variant="MDMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
                                                         {item.title}
                                                     </Text>
                                             }
@@ -163,8 +163,8 @@ const Navigation = () => {
                 </Show>
                 <Show below="lg" >
                     <Box cursor="pointer" onClick={() => setOpen(true)} w="50px" h="100%" display="flex" alignItems="flex-end" justifyContent="flex-end" flexDirection="column" >
-                        <Box w="100%" h="2px" bg="white" />
-                        <Box m="10px 0px" w='100%' h="2px" bg="white" />
+                        <Box w="90%" h="1px" bg="white" />
+                        <Box m="8px 0px" w='90%' h="1px" bg="white" />
                     </Box>
                 </Show>
             </Box>

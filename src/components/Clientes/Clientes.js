@@ -8,7 +8,7 @@ import { FiArrowRight } from "react-icons/fi";
 const variants = {
     show: {
         transition: {
-            staggerChildren: 0.20,
+            staggerChildren: 0.12,
         },
     }
 }
@@ -23,7 +23,7 @@ const itemVariants = {
         y: 0,
         transition: {
             ease: [.6, .01, -.05, .95],
-            duration: 1.6,
+            duration: 1.4,
         }
     },
     exit: {
@@ -81,7 +81,7 @@ const Clientes = () => {
                 </Text>
             </motion.div>
             <Box w="100%" mt="50px" display="flex" alignItems="center" justifyContent="center" position="relative">
-                <Box w="80%" display="flex" alignItems="center" justifyContent="center">
+                <Box w="70%" display="flex" alignItems="center" justifyContent="center">
                     <motion.div 
                         variants={variants}
                         initial="hidden"
@@ -102,7 +102,7 @@ const Clientes = () => {
                                         >
                                             <WrapItem shadow="xl">
                                                 <Center borderRadius="2px" p="10px 50px" bg='white'>
-                                                    <Text variant="XSMEDIUM">
+                                                    <Text color="black">
                                                         {item.title}
                                                     </Text>
                                                 </Center>
@@ -120,7 +120,7 @@ const Clientes = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 0.8 }}
                     viewport={{ once: true }}
-                    transition={{ ease: "easeInOut", duration: .5, delay: 1.8 }}
+                    transition={{ ease: "easeInOut", duration: .5, delay: 1.4 }}
                 >
                     <Button colorScheme="primary" size="md" onClick={() => router.push("/portafolio")} rightIcon={<FiArrowRight />} >
                         ve nuestro trabajo

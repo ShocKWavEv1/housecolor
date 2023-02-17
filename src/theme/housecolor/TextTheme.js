@@ -1,10 +1,8 @@
 import { defineStyle, defineStyleConfig } from '@chakra-ui/styled-system'
+import { mode } from '@chakra-ui/theme-tools'
 
 const baseThemeMode = {
-    color: 'black',
-    _dark: {
-      color: 'white'
-    }
+    color: mode('white', 'black'),
 }
 
 const baseLargeStyles = {

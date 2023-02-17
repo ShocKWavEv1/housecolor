@@ -8,7 +8,7 @@ const Reel = ({ handleReel }) => {
     const [isReel, setReel] = useState(false)
 
     return(
-        <Box as="section" padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "0px 6% 100px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+        <Box as="section" padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 100px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
             <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -22,11 +22,29 @@ const Reel = ({ handleReel }) => {
                 <Box mt="0px" w="100%" h="90vh" bg="#4F26E9" shadow="xl" borderRadius="2px" display="flex" alignItems="center" justifyContent="center" >
                     <motion.div
                         whileHover={{ scale: 0.8 }}
-                        transition={{ duration: 0.3 }}
+                        initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            ease: "easeInOut",
+                            duration: 0.3
+                         }}
                     >
-                        <Box onClick={() => setReel(true)} cursor="pointer" display="flex" alignItems="center" justifyContent="center" flexDirection="row">
-                            <Box mx="20px" bg="white" shadow="xl" fontSize="32px" w="120px" h="120px" borderRadius="55em" display="flex" alignItems="center" justifyContent="center" >
-                                <FiPlay color="#4F26E9" />
+                        <Box w="100%" display="flex" alignItems="center" justifyContent="center" flexDirection="row" >
+                            <Box w="auto" display="flex" alignItems="center" justifyContent="center">
+                                <Text variant="SMBOLD" >
+                                    Ver
+                                </Text>
+                            </Box>
+                            <Box onClick={() => setReel(true)} cursor="pointer" display="flex" alignItems="center" justifyContent="center" flexDirection="row">
+                                <Box mx="20px" bg="white" shadow="xl" fontSize="32px" w="120px" h="120px" borderRadius="55em" display="flex" alignItems="center" justifyContent="center" >
+                                    <FiPlay color="#4F26E9" />
+                                </Box>
+                            </Box>
+                            <Box w="auto" display="flex" alignItems="center" justifyContent="center">
+                                <Text variant="SMBOLD" >
+                                    Reel
+                                </Text>
                             </Box>
                         </Box>
                     </motion.div>

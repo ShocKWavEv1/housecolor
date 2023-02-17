@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <ChakraProvider theme={theme} >
       <Fonts />
-      <Meta title={"Housecolor | Construimos experiencias y productos digitales"} />
+      <Meta title={"housecolor | construimos experiencias y productos digitales"} />
       <LoadingBar
           ref={LoadingBarRef}
           height={8}

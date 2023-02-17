@@ -1,8 +1,6 @@
 import { Box, Text, Wrap } from '@chakra-ui/react'
 import Clientes from 'components/Clientes/Clientes'
-import FAQS from 'components/FAQS/FAQS'
 import Hero from 'components/Hero/Hero'
-import Horizontal from 'components/Horizontal/Horizontal'
 import Manifesto from 'components/Manifesto/Manifesto'
 import Reel from 'components/Reel/Reel'
 import ServicesGrid from 'components/ServicesGrid/ServicesGrid'
@@ -20,7 +18,6 @@ export default function Home() {
         <Reel />
         <Manifesto />
         <Clientes />
-        <FAQS />
       </Box>
     </SmoothScrollProvider>
   )
