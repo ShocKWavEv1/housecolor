@@ -148,13 +148,13 @@ const Navigation = () => {
                                 })
                             }
                             <Box display="flex" alignItems="center" justifyContent="center" flexDirection="row" >
-                                <Text cursor="pointer" variant="XSBOLD" opacity={1} _hover={{ opacity: 1 }}>
+                                <Text cursor="pointer" variant="SMMEDIUM" opacity={1} _hover={{ opacity: 1 }}>
                                     ES
                                 </Text>
-                                <Text variant="XSBOLD" opacity={0.6} _hover={{ opacity: 1 }}>
+                                <Text variant="SMMEDIUM" opacity={0.6} _hover={{ opacity: 1 }}>
                                     /
                                 </Text>
-                                <Text cursor="pointer" variant="XSBOLD" opacity={0.6} _hover={{ opacity: 1 }}>
+                                <Text cursor="pointer" variant="SMMEDIUM" opacity={0.6} _hover={{ opacity: 1 }}>
                                     EN
                                 </Text>
                             </Box>

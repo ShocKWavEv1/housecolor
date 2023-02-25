@@ -78,7 +78,7 @@ const Manifesto = () => {
                                                     duration: 1,
                                                 }}
                                             >
-                                                <Heading variant="H6BOLD" data-scroll data-scroll-speed="1" >
+                                                <Heading variant="H6BOLD" data-scroll data-scroll-speed="1.5" >
                                                     {item.title}
                                                 </Heading>
                                             </motion.div>
@@ -92,7 +92,7 @@ const Manifesto = () => {
                                                         duration: 1.2,
                                                     }}
                                                 >
-                                                    <Text variant="SMMEDIUM" data-scroll data-scroll-speed=".6">
+                                                    <Text variant="SMMEDIUM" data-scroll data-scroll-speed="1">
                                                         {item.desc}
                                                     </Text>
                                                 </motion.div>

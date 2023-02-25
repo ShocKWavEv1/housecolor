@@ -16,7 +16,7 @@ const Hero = () => {
                         duration: 1,
                     }}
                 >
-                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="4" mt={["60px", "60px", "100px", "100px"]} variant={["H6BOLD", "H6BOLD", "H5BOLD", "H4BOLD"]}>
+                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="4" mt={["60px", "60px", "100px", "110px"]} variant={["H6BOLD", "H5BOLD", "H4BOLD", "H3BOLD"]}>
                         We are a full post production studio for films, television, commercial and advertising.
                     </Heading>
                 </motion.div>
@@ -29,7 +29,7 @@ const Hero = () => {
                         duration: 1,
                     }}
                 >
-                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="3" variant={["H6BOLD", "H6BOLD", "H5BOLD", "H4BOLD"]}>
+                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="3" variant={["H6BOLD", "H5BOLD", "H4BOLD", "H3BOLD"]}>
                         Located in México, CDMX.
                     </Heading>
                 </motion.div>
