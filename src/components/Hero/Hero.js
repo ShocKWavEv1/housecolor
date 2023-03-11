@@ -5,7 +5,7 @@ import { TfiAngleDoubleDown } from "react-icons/tfi"
 
 const Hero = () => {
     return(
-        <Box as="section" padding={["0 6% 0 6%", "0px 6% 0 6%", "0 6% 0 6%", "0 6% 0 6%"]} w="100%" h="100vh" position="absolute" zIndex={1} display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column" >
+        <Box as="section" padding={["0 6% 0 6%", "0px 6% 0 6%", "0 6% 0 6%", "0 6% 0 6%"]} w="100%" h={["120vh", "100vh", "100vh", "100vh"]} position="absolute" zIndex={1} display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column" >
             <Box w="100%" h="100%" mt="20px" display="flex" alignItems="flex-start" justifyContent="center" flexDirection="column">
                 <motion.div
                     initial={{ opacity: 0, y: 80 }}
@@ -16,7 +16,7 @@ const Hero = () => {
                         duration: 1,
                     }}
                 >
-                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="4" mt={["60px", "60px", "100px", "110px"]} variant={["H6BOLD", "H5BOLD", "H4BOLD", "H3BOLD"]}>
+                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="4" mt={["60px", "60px", "100px", "110px"]} variant={["H6MEDIUM", "H6BOLD", "H4BOLD", "H3BOLD"]}>
                         We are a full post production studio for films, television, commercial and advertising.
                     </Heading>
                 </motion.div>
@@ -29,7 +29,7 @@ const Hero = () => {
                         duration: 1,
                     }}
                 >
-                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="3" variant={["H6BOLD", "H5BOLD", "H4BOLD", "H3BOLD"]}>
+                    <Heading data-scroll data-scroll-position="top" data-scroll-speed="3" variant={["H6BOLD", "H6BOLD", "H4BOLD", "H3BOLD"]}>
                         Located in México, CDMX.
                     </Heading>
                 </motion.div>
