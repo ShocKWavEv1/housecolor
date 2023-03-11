@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <SmoothScrollProvider options={smoothScrollOptions}>
       <Box data-scroll-container w="100%" h="auto" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
-        <Sketch gradientGL={"4820f2,22228b,DB286A,DB286A,0e003f"} />
+        <Sketch gradientGL={"08037f,e77300,9c1a13,9c1a13,0e003f"} />
         <Hero />
         <ServicesGrid />
         <Reel />
