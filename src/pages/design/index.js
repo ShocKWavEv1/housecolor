@@ -122,56 +122,54 @@ export default function Design() {
   ]
 
   return (
-    <SmoothScrollProvider options={smoothScrollOptions}>
-      <Box w="100%" data-scroll-container h="auto" minH="100vh" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
-        <Sketch gradientGL="14ec6a,4820f2,22228b,0e003f,14ec6a" />
-        <Hero />
-        <Button onClick={toggleColorMode} colorScheme="success" size={["xs", "xs", "xs", "xs"]}>
-          welcome to housecolor.studio
-        </Button>
-        <Button mt="20px" colorScheme="info" size={["sm", "sm", "sm", "sm"]}>
-          welcome to housecolor.studio
-        </Button>
-        <Button my="20px" colorScheme="accent" size={["sm", "sm", "md", "md"]}>
-          welcome to housecolor.studio
-        </Button>
-        <Button colorScheme="primary" disabled size={["sm", "sm", "md", "lg"]} >
-          welcome to housecolor.studio
-        </Button>
-        <Button mt="20px" variant="outline" disabled colorScheme="primary" size={["sm", "sm", "md", "sm"]} >
-          welcome to housecolor.studio
-        </Button>
-        <Box mt="20px" w="100%">
-          <SimpleGrid columns={[1, 1, 2, 3, 3]} spacing="20px">
-            {
-              typo.map((item, i) => {
-                return(
-                  <Box w="100%" display="flex" alignItems="center" justifyContent="center">
-                    <Heading key={i} variant={item.variant}>
-                      Satoshi
-                    </Heading>
-                  </Box>
-                )
-              })
-            }
-          </SimpleGrid>
-        </Box> 
-        <Box mt="4rem" w="100%">
-          <SimpleGrid columns={[1, 1, 2, 3, 3]} spacing="20px">
-            {
-              body.map((item, i) => {
-                return(
-                  <Box w="100%" display="flex" alignItems="center" justifyContent="center">
-                    <Text key={i} variant={item.variant} align="center">
-                      The quick brown fox jumps over the lazy dog
-                    </Text>
-                  </Box>
-                )
-              })
-            }
-          </SimpleGrid>
-        </Box>
+    <Box w="100%" data-scroll-container h="auto" minH="100vh" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+      <Sketch gradientGL="14ec6a,4820f2,22228b,0e003f,14ec6a" />
+      <Hero />
+      <Button onClick={toggleColorMode} colorScheme="success" size={["xs", "xs", "xs", "xs"]}>
+        welcome to housecolor.studio
+      </Button>
+      <Button mt="20px" colorScheme="info" size={["sm", "sm", "sm", "sm"]}>
+        welcome to housecolor.studio
+      </Button>
+      <Button my="20px" colorScheme="accent" size={["sm", "sm", "md", "md"]}>
+        welcome to housecolor.studio
+      </Button>
+      <Button colorScheme="primary" disabled size={["sm", "sm", "md", "lg"]} >
+        welcome to housecolor.studio
+      </Button>
+      <Button mt="20px" variant="outline" disabled colorScheme="primary" size={["sm", "sm", "md", "sm"]} >
+        welcome to housecolor.studio
+      </Button>
+      <Box mt="20px" w="100%">
+        <SimpleGrid columns={[1, 1, 2, 3, 3]} spacing="20px">
+          {
+            typo.map((item, i) => {
+              return(
+                <Box w="100%" display="flex" alignItems="center" justifyContent="center">
+                  <Heading key={i} variant={item.variant}>
+                    Satoshi
+                  </Heading>
+                </Box>
+              )
+            })
+          }
+        </SimpleGrid>
+      </Box> 
+      <Box mt="4rem" w="100%">
+        <SimpleGrid columns={[1, 1, 2, 3, 3]} spacing="20px">
+          {
+            body.map((item, i) => {
+              return(
+                <Box w="100%" display="flex" alignItems="center" justifyContent="center">
+                  <Text key={i} variant={item.variant} align="center">
+                    The quick brown fox jumps over the lazy dog
+                  </Text>
+                </Box>
+              )
+            })
+          }
+        </SimpleGrid>
       </Box>
-    </SmoothScrollProvider>
+    </Box>
   )
 }
