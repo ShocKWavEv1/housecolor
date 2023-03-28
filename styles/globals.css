@@ -21,6 +21,17 @@ a {
 canvas{display: block}
 #container{width: 100vw;height: 100vh; background-color: red;}
 
+:root {
+  --backgroundColor: #292929;
+  --primaryColor: #0aa1ff;
+  --primaryTextColor: #e6e6e6;
+
+  --headlineBig: clamp(5rem, 9.9vw, 15rem);
+  --headlineMedium: clamp(1rem, 2vw, 4rem);
+  --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
+  --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
+}
+
 .bounce2 {
   animation: bounce2 2s ease infinite;
 }
@@ -56,111 +67,42 @@ canvas{display: block}
   transform: scaleX(1);
 }
 
-.scroll-container {
-  position: relative;
-  will-change: transform;
-  width: 600px;
-  height: 50vh;
-}
-.scroll-container .ghost {
-  width: 600px;
-}
-.thumbnails-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0px 160px;
-  background-color: #141414;
-  border: 40px solid yellowgreen;
-}
-.thumbnails-container .thumbnails {
-  position: relative;
-  display: flex;
-  border: 20px solid yellow;
-}
-.thumbnails-container .thumbnails > *:not(:last-child) {
-  margin-right: 45px;
-}
-.thumbnails-container .thumbnails .thumbnail {
-  height: 40vh;
-  width: 600px;
-  background-color: royalblue;
-  border: 15px solid magenta;
-}
-
-
-.bumper {
-  text-align: center;
-  padding: 128px 16px;
-  background-color: #efefef;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.space-holder {
-  position: relative;
-  width: 100%;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
+.scroll-section-outer {
   overflow-x: hidden;
 }
 
-.horizontal {
-  position: absolute;
-  height: 100%;
-  will-change: transform;
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
-.cards {
-  position: relative;
-  height: 100%;
-  padding: 0 0 0 150px;
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
-.sample-card {
-  position: relative;
-  height: 300px;
-  width: 500px;
-  background-color: red;
-  margin-right: 75px;
-  flex-shrink: 0;
-}
-
-.marquee {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 206px;
-  overflow: hidden;
-}
-
-.track {
-  position: absolute;
-  white-space: nowrap;
-  will-change: transform;
-}
-
-.track > #clients {
-  margin: 20px 0;
-  font-size: 8rem;
-  font-family: Antonio;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #f4955c;
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
   text-transform: uppercase;
+}
+
+.footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: var(--headlineBig);
+  color: var(--primaryTextColor);
 }
