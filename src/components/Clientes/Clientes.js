@@ -53,7 +53,7 @@ const Clientes = () => {
     ]
 
     return(
-        <Box as="section" padding={["70px 6% 70px 6%", "70px 6% 70px 6%", "70px 6% 70px 6%", "100px 6% 100px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+        <Box as="section" padding={["20px 6% 70px 6%", "20px 6% 70px 6%", "20px 6% 70px 6%", "70px 6% 100px 6%"]} w="100%" display="flex" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
             <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}

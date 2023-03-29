@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Show } from '@chakra-ui/react'
 import Clientes from 'components/Clientes/Clientes'
 import Hero from 'components/Hero/Hero'
 import Manifesto from 'components/Manifesto/Manifesto'
@@ -16,9 +16,8 @@ export default function Home() {
       <Hero />
       <ServicesGrid />
       <Reel />
-      <Manifesto />
-      <Clientes />
       <ScrollSection />
+      <Clientes />
     </Box>
   )
 }

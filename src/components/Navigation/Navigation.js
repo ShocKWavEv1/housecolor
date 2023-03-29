@@ -89,11 +89,11 @@ const Navigation = () => {
             <Menu>
                 <MenuButton>
                     <Box display="flex" >
-                        <Text variant="MDMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                        <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
                             {item.title}
                         </Text>
                         <Box pl="5px" display="flex" alignItems="center" justifyContent="center" >
-                            <Text variant="MDMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                            <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
                                 {item.icon}
                             </Text>
                         </Box>
@@ -139,7 +139,7 @@ const Navigation = () => {
                                             {
                                                 item.path === "/servicios" ? 
                                                     renderDropdown(item) :
-                                                    <Text variant="MDMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
+                                                    <Text variant="SMMEDIUM" opacity={router.pathname === item.path ? 1 : 0.6} _hover={{ opacity: 1 }} >
                                                         {item.title}
                                                     </Text>
                                             }
@@ -148,13 +148,13 @@ const Navigation = () => {
                                 })
                             }
                             <Box display="flex" alignItems="center" justifyContent="center" flexDirection="row" >
-                                <Text cursor="pointer" variant="SMMEDIUM" opacity={1} _hover={{ opacity: 1 }}>
+                                <Text cursor="pointer" variant="XSMEDIUM" opacity={1} _hover={{ opacity: 1 }}>
                                     ES
                                 </Text>
-                                <Text variant="SMMEDIUM" opacity={0.6} _hover={{ opacity: 1 }}>
-                                    /
+                                <Text variant="XSMEDIUM" opacity={0.6} _hover={{ opacity: 1 }}>
+                                    &nbsp;|&nbsp;
                                 </Text>
-                                <Text cursor="pointer" variant="SMMEDIUM" opacity={0.6} _hover={{ opacity: 1 }}>
+                                <Text cursor="pointer" variant="XSMEDIUM" opacity={0.6} _hover={{ opacity: 1 }}>
                                     EN
                                 </Text>
                             </Box>
